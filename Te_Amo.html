@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carta de Amor</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+      font-family: 'Georgia', serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .card {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      max-width: 600px;
+      text-align: center;
+      animation: fadeIn 2s ease-in;
+    }
+    .heart {
+      color: #e25555;
+      font-size: 3rem;
+      animation: heartbeat 1.5s infinite;
+    }
+    h1 {
+      margin-top: 0;
+      font-size: 2rem;
+      color: #333;
+    }
+    p {
+      font-size: 1.1rem;
+      color: #555;
+      margin: 1.5rem 0;
+    }
+    .button {
+      background: #e25555;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .button:hover {
+      background: #c94444;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="heart">❤️</div>
+    <h1>¿Te gustaría ser mi persona especial?</h1>
+    <p>
+      Entre millones de sonrisas, la tuya es la que más me ilumina.  
+      Cada momento contigo se siente como un verso nuevo en la canción más bonita.
+    </p>
+    <p>
+      No prometo perfección, pero sí entregarte todo mi cariño, mis ganas de crecer juntos,
+      y un corazón que ya late por ti.
+    </p>
+    <button class="button" onclick="alert('¡Gracias por decir que sí! ❤️')">Sí, quiero 💖</button>
+  </div>
+</body>
+</html>
